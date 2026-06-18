@@ -996,8 +996,6 @@ function submitBooking() {
   const email=document.getElementById('f-email').value.trim();
   const tel=document.getElementById('f-tel').value.trim();
   const date=document.getElementById('f-date').value;
-  const cgv=document.getElementById('f-cgv').checked;
-  const rgpd=document.getElementById('f-rgpd').checked;
 
   if(!prenom||!nom||!email||!tel||!date) { alert('⚠️ Merci de remplir tous les champs obligatoires.'); return; }
   if(!currentService) { alert('⚠️ Veuillez sélectionner une prestation.'); return; }
