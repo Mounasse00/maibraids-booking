@@ -1002,7 +1002,6 @@ function submitBooking() {
   if(!prenom||!nom||!email||!tel||!date) { alert('⚠️ Merci de remplir tous les champs obligatoires.'); return; }
   if(!currentService) { alert('⚠️ Veuillez sélectionner une prestation.'); return; }
   if(!selectedSlot) { alert('⚠️ Veuillez sélectionner un créneau horaire.'); return; }
-  if(!cgv||!rgpd) { alert('⚠️ Merci d\'accepter les conditions générales et la politique de confidentialité.'); return; }
 
   const booking = { 
     id:Date.now(), prenom, nom, email, tel, 
