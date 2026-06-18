@@ -1006,17 +1006,25 @@ function submitBooking() {
   const email=document.getElementById('f-email').value.trim();
   const tel=document.getElementById('f-tel').value.trim();
   const date=document.getElementById('f-date').value;
+  
+  // Nouvelles vérifications PayPal
+  const paypalClique=document.getElementById('f-paypal-clique').value;
+  const paypalName=document.getElementById('f-paypal-name').value.trim();
 
   if(!prenom||!nom||!email||!tel||!date) { alert('⚠️ Merci de remplir tous les champs obligatoires.'); return; }
   if(!currentService) { alert('⚠️ Veuillez sélectionner une prestation.'); return; }
   if(!selectedSlot) { alert('⚠️ Veuillez sélectionner un créneau horaire.'); return; }
+  
+  // Blocage si pas de simulation de paiement
+  if(paypalClique !== '1') { alert('⚠️ Vous devez d\'abord cliquer sur le bouton PayPal pour régler l\'acompte.'); return; }
+  if(!paypalName) { alert('⚠️ Merci d\'indiquer le Nom ou l\'E-mail du compte PayPal utilisé pour le paiement.'); return; }
 
   const booking = { 
     id:Date.now(), prenom, nom, email, tel, 
     service:currentService.name, serviceKey:currentService.key, 
     price:currentService.price, acompte:Math.round(currentService.price*0.3), 
     date, heure:selectedSlot, status:'pending', 
-    note:document.getElementById('f-note').value,
+    note:document.getElementById('f-note').value + (b.note ? " | " : "") + "Paiement via : " + paypalName, // Ajout de l'info de suivi dans la note
     inspo: currentInspoB64
   };
   
@@ -1030,10 +1038,11 @@ function submitBooking() {
   document.getElementById('sc-date').textContent=d.toLocaleDateString('fr-BE',opts);
   document.getElementById('sc-heure').textContent=selectedSlot;
   document.getElementById('sc-prix').textContent='€'+currentService.price;
-  document.getElementById('sc-acompte').textContent='€'+Math.round(currentService.price*0.3)+' (lien PayPal envoyé)';
+  document.getElementById('sc-acompte').textContent='€'+Math.round(currentService.price*0.3)+' (Payé via PayPal)';
   document.getElementById('booking-form-container').style.display='none';
   document.getElementById('booking-success').style.display='block';
 }
+
 
 // ── DASHBOARD ──
 function toggleDash() {
