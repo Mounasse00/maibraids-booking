@@ -666,15 +666,26 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           </div>
 
           <div class="fg full">
-            <div class="cbox">
-              <input type="checkbox" id="f-cgv">
-              <label for="f-cgv">J'ai lu et j'accepte la <a href="#" onclick="openModal('modal-cgv');return false;">politique de rendez-vous</a> : cheveux propres obligatoires, retard toléré 15 min, annulation 48h avant, acompte non remboursable passé 24h.</label>
+            <div class="toggle-wrapper">
+              <label class="toggle-label" for="f-cgv">
+                J'ai lu et j'accepte la <a href="#" onclick="openModal('modal-cgv');return false;">politique de rendez-vous</a> : cheveux propres obligatoires, retard toléré 15 min, annulation 48h avant, acompte non remboursable passé 24h.
+              </label>
+              <label class="switch">
+                <input type="checkbox" id="f-cgv">
+                <span class="slider"></span>
+              </label>
             </div>
           </div>
+          
           <div class="fg full">
-            <div class="cbox">
-              <input type="checkbox" id="f-rgpd">
-              <label for="f-rgpd">J'accepte que mes données soient utilisées uniquement pour la gestion de mon rendez-vous. <a href="#" onclick="openModal('modal-rgpd');return false;">Politique de confidentialité.</a></label>
+            <div class="toggle-wrapper">
+              <label class="toggle-label" for="f-rgpd">
+                J'accepte que mes données soient utilisées uniquement pour la gestion de mon rendez-vous. <a href="#" onclick="openModal('modal-rgpd');return false;">Politique de confidentialité.</a>
+              </label>
+              <label class="switch">
+                <input type="checkbox" id="f-rgpd">
+                <span class="slider"></span>
+              </label>
             </div>
           </div>
 
