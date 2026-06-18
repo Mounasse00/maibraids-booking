@@ -366,8 +366,8 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
 <div id="main-site">
 <section class="hero" id="home">
   <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
-  <p class="hero-eye">✦ Bruxelles · Coiffeuse professionnelle ✦</p>
-  <h1><em>Mai</em>Braids<br>_Bxl</h1>
+  <p class="hero-eye">✦ Bruxelles · Coiffeuse  ✦</p>
+  <h1><em>Mai</em>Braids_Bxl</h1>
   <p class="hero-tag">Tresses · Style · <span>Confiance</span></p>
   <div class="hero-btns">
     <a href="#booking" class="btn-p">Réserver mon rendez-vous</a>
@@ -380,10 +380,10 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
   <div class="si">
     <div class="about-grid">
       <div class="about-text">
-        <p class="slabel">✨ Artisanat Capillaire</p>
+        <p class="slabel"> Artisanat Capillaire</p>
         <h2 class="stitle">Plus qu'une coiffeuse,<br><em>une expérience</em></h2>
         <div class="divider"></div>
-        <p>Je suis Mai, coiffeuse passionnée basée à Bruxelles. Spécialisée dans les tresses africaines — box braids, knotless, cornrows, twists — je mets un point d'honneur à prendre soin de vos cheveux tout en exprimant votre style unique.</p>
+        <p>Je suis Mai, coiffeuse passionnée basée à Bruxelles. Spécialisée dans les tresses africaines, box braids, knotless, cornrows, je mets un point d'honneur à prendre soin de vos cheveux tout en exprimant votre style unique.</p>
         <p>Chaque cliente mérite une attention personnalisée, un résultat impeccable et une ambiance chaleureuse où vous vous sentez comme à la maison.</p>
         
         <div class="val-grid">
@@ -409,7 +409,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           </div>
         </div>
 
-        <p style="font-size:13px;font-weight:600;color:var(--dark);margin-top:36px;margin-bottom:14px; text-transform: uppercase; letter-spacing: 0.05em;">📸 Nos réalisations & soins</p>
+        <p style="font-size:13px;font-weight:600;color:var(--dark);margin-top:36px;margin-bottom:14px; text-transform: uppercase; letter-spacing: 0.05em;"> Nos réalisations & soins</p>
         <div class="soins-gallery" id="soins-gallery">
           <div class="soin-slot" onclick="document.getElementById('soin-upload-0').click()">
             <input type="file" id="soin-upload-0" accept="image/*" onchange="addSoinImg(event,0)">
@@ -421,6 +421,18 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           </div>
           <div class="soin-slot" onclick="document.getElementById('soin-upload-2').click()">
             <input type="file" id="soin-upload-2" accept="image/*" onchange="addSoinImg(event,2)">
+            <div class="add-icon"><svg class="icon" style="width:24px;height:24px;"><use href="#ico-camera"/></svg></div><div class="add-text">Ajouter</div>
+          </div>
+          <div class="soin-slot" onclick="document.getElementById('soin-upload-0').click()">
+            <input type="file" id="soin-upload-0" accept="image/*" onchange="addSoinImg(event,0)">
+            <div class="add-icon"><svg class="icon" style="width:24px;height:24px;"><use href="#ico-camera"/></svg></div><div class="add-text">Ajouter</div>
+          </div>
+          <div class="soin-slot" onclick="document.getElementById('soin-upload-0').click()">
+            <input type="file" id="soin-upload-0" accept="image/*" onchange="addSoinImg(event,0)">
+            <div class="add-icon"><svg class="icon" style="width:24px;height:24px;"><use href="#ico-camera"/></svg></div><div class="add-text">Ajouter</div>
+          </div>
+          <div class="soin-slot" onclick="document.getElementById('soin-upload-0').click()">
+            <input type="file" id="soin-upload-0" accept="image/*" onchange="addSoinImg(event,0)">
             <div class="add-icon"><svg class="icon" style="width:24px;height:24px;"><use href="#ico-camera"/></svg></div><div class="add-text">Ajouter</div>
           </div>
         </div>
@@ -444,10 +456,6 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
       <div class="info-card">
         <div class="info-card-ico"><svg class="icon"><use href="#ico-calendar"/></svg></div>
         <h3>Jours d'ouverture</h3>
-        <div class="hours-row"><span class="day">Lundi</span><span class="closed">Fermé</span></div>
-        <div class="hours-row"><span class="day">Mardi</span><span class="closed">Fermé</span></div>
-        <div class="hours-row"><span class="day">Mercredi</span><span class="closed">Fermé</span></div>
-        <div class="hours-row"><span class="day">Jeudi</span><span class="closed">Fermé</span></div>
         <div class="hours-row"><span class="day">Vendredi</span><span class="time">10:00 – 20:00</span></div>
         <div class="hours-row"><span class="day">Samedi</span><span class="time">10:00 – 20:00</span></div>
         <div class="hours-row"><span class="day">Dimanche</span><span class="time">10:00 – 20:00</span></div>
@@ -570,29 +578,29 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           <div class="fg full">
             <label>Prestation souhaitée *</label>
             <select id="f-service" onchange="onServiceChange()">
-              <option value="">🔮 Sélectionnez une prestation</option>
-              <optgroup label="✨ Knotless Braids · Small">
+              <option value=""> Sélectionnez une prestation</option>
+              <optgroup label="Knotless Braids · Small">
                 <option value="knotless_small_shoulder|Knotless Small · Épaules|70|5">Knotless Small · Épaules · €70</option>
                 <option value="knotless_small_mid|Knotless Small · Mi-dos|80|5">Knotless Small · Mi-dos · €80</option>
                 <option value="knotless_small_lower|Knotless Small · Bas du dos|90|6">Knotless Small · Bas du dos · €90</option>
               </optgroup>
-              <optgroup label="✨ Knotless Braids · Medium">
+              <optgroup label="Knotless Braids · Medium">
                 <option value="knotless_med_shoulder|Knotless Medium · Épaules|60|4">Knotless Medium · Épaules · €60</option>
                 <option value="knotless_med_mid|Knotless Medium · Mi-dos|70|5">Knotless Medium · Mi-dos · €70</option>
                 <option value="knotless_med_lower|Knotless Medium · Bas du dos|80|5">Knotless Medium · Bas du dos · €80</option>
               </optgroup>
-              <optgroup label="✨ Knotless Braids · Large">
+              <optgroup label="Knotless Braids · Large">
                 <option value="knotless_large_shoulder|Knotless Large · Épaules|55|3">Knotless Large · Épaules · €55</option>
                 <option value="knotless_large_mid|Knotless Large · Mi-dos|60|4">Knotless Large · Mi-dos · €60</option>
                 <option value="knotless_large_lower|Knotless Large · Bas du dos|70|5">Knotless Large · Bas du dos · €70</option>
               </optgroup>
-              <optgroup label="🌿 Cornrows / Stitch Braids">
+              <optgroup label="Cornrows / Stitch Braids">
                 <option value="cornrows_2_4|Cornrows 2–4 rangs|35|2">Cornrows 2–4 rangs · €35</option>
                 <option value="cornrows_5_7|Cornrows 5–7 rangs|45|3">Cornrows 5–7 rangs · €45</option>
                 <option value="cornrows_8_10|Cornrows 8–10 rangs|50|4">Cornrows 8–10 rangs · €50</option>
                 <option value="cornrows_11_14|Cornrows 11–14 rangs|55|5">Cornrows 11–14 rangs · €55</option>
               </optgroup>
-              <optgroup label="🌀 Twists">
+              <optgroup label="Twists">
                 <option value="twists_mini|Twists Mini|70|6">Twists Mini · €70</option>
                 <option value="twists_small|Twists Small|65|5">Twists Small · €65</option>
                 <option value="twists_medium|Twists Medium|60|4">Twists Medium · €60</option>
@@ -615,7 +623,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           <div class="fg">
             <label>Créneau horaire disponible *</label>
             <div class="slots-wrap">
-              <div class="slots-hint" id="slots-hint">✨ Sélectionnez une prestation et une date pour voir les horaires libres</div>
+              <div class="slots-hint" id="slots-hint"> Sélectionnez une prestation et une date pour voir les horaires libres</div>
               <div class="slots-grid" id="slots-container" style="display:none;"></div>
               <div class="slots-info" id="slots-info"></div>
             </div>
@@ -624,7 +632,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           <div class="fg full">
             <label>Longueur & état de vos cheveux</label>
             <select id="f-cheveux">
-              <option value="">📐 Sélectionnez la longueur</option>
+              <option value="">Sélectionnez la longueur</option>
               <option>Courts (moins de 5cm)</option>
               <option>Mi-longs (5–15cm)</option>
               <option>Longs (15–30cm)</option>
@@ -679,7 +687,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
 
       <div id="booking-success">
         <div style="text-align:center;margin-bottom:28px;">
-          <div style="font-size:48px;margin-bottom:12px;">✨</div>
+          <div style="font-size:48px;margin-bottom:12px;"></div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--dark);margin-bottom:6px;">Demande envoyée !</div>
           <p style="color:var(--light);font-size:14px;">Voici un aperçu de l'e-mail de confirmation que vous allez recevoir</p>
         </div>
@@ -689,7 +697,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
             <div style="font-size:11px;color:rgba(255,255,255,.6);margin-top:8px;letter-spacing:.15em;">· BRAIDS THAT SPEAK FOR YOU ·</div>
           </div>
           <div class="mail-body">
-            <h3>Votre demande de réservation 🌸</h3>
+            <h3>Votre demande de réservation </h3>
             <p>Bonjour <strong id="sc-prenom"></strong>,</p>
             <p>Nous avons bien reçu votre demande de rendez-vous chez <strong>MaiBraids_Bxl</strong>. Je vous confirme le créneau sous <strong>24h</strong> et vous enverrai un lien PayPal pour votre acompte.</p>
             <div class="mail-recap">
@@ -701,7 +709,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
               <div class="mr-row"><span>Paiement acompte</span><span>PayPal (lien envoyé)</span></div>
               <div class="mr-row"><span>Solde restant</span><span>En espèces sur place</span></div>
             </div>
-            <p>📌 <strong>Rappel :</strong> Vos cheveux doivent être propres, secs et démêlés le jour J. Tolérance retard : 15 min.</p>
+            <p> <strong>Rappel :</strong> Vos cheveux doivent être propres, secs et démêlés le jour J. Tolérance retard : 15 min.</p>
             <p style="color:var(--rose); font-weight: 500; text-align: center; margin-top: 20px;">✦ On se retrouve bientôt — hâte de prendre soin de vous ! ✦</p>
           </div>
           <div class="mail-footer">MaiBraids_Bxl · Bruxelles · @MaiBraids_Bxl</div>
@@ -817,7 +825,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
 </div>
 <div class="modal-overlay" id="modal-dash-login">
   <div class="modal" style="max-width:360px;text-align:center;">
-    <h3 style="margin-bottom:20px;">🔐 Accès coiffeuse</h3>
+    <h3 style="margin-bottom:20px;">Accès coiffeuse</h3>
     <input type="password" id="dash-pwd" placeholder="Mot de passe" style="width:100%;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 16px;font-size:14px;font-family:'DM Sans',sans-serif;margin-bottom:14px;outline:none;">
     <button class="btn-p" style="width:100%" onclick="checkDashPwd()">Connexion</button>
     <div id="pwd-error" style="color:var(--rose);font-size:13px;margin-top:8px;display:none;">Mot de passe incorrect</div>
@@ -826,7 +834,7 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
 <div class="modal-overlay" id="modal-rappel">
   <div class="modal" style="max-width:460px;">
     <button class="modal-close" onclick="closeModal('modal-rappel')">✕</button>
-    <h3>📨 Envoyer un rappel</h3>
+    <h3>Envoyer un rappel</h3>
     <p style="margin-bottom:16px;">Message de rappel pour <strong id="rappel-name"></strong> :</p>
     <textarea id="rappel-msg" style="width:100%;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;font-family:'DM Sans',sans-serif;font-size:14px;min-height:120px;outline:none;" onchange="this.style.borderColor='var(--rose)'"></textarea>
     <div style="display:flex;gap:10px;margin-top:16px;">
@@ -903,7 +911,7 @@ function updateSlots() {
   
   // Restriction aux jours Vendredi (5), Samedi (6), Dimanche (0)
   if (day !== 0 && day !== 5 && day !== 6) {
-    hint.innerHTML='<span style="color:var(--rose); font-weight:500;">❌ Salon fermé.</span> Veuillez choisir un vendredi, samedi ou dimanche.';
+    hint.innerHTML='<span style="color:var(--rose); font-weight:500;"> Salon fermé.</span> Veuillez choisir un vendredi, samedi ou dimanche.';
     hint.style.display='block'; container.style.display='none'; info.textContent=''; return;
   }
 
@@ -1064,13 +1072,13 @@ function renderBookings() {
       <div class="br-date"><div class="brd-d">${dd}</div><div class="brd-m">${mm}</div></div>
       <div class="br-info">
         <div class="br-name">${b.prenom} ${b.nom}</div>
-        <div class="br-detail">🕐 ${b.heure} · ${b.service} · <strong>€${b.price}</strong> · 📧 ${b.email} · 📞 ${b.tel}</div>
+        <div class="br-detail"> ${b.heure} · ${b.service} · <strong>€${b.price}</strong> · 📧 ${b.email} · 📞 ${b.tel}</div>
         ${b.note ? `<div style="font-size:12.5px;color:var(--light);margin-top:6px; font-style:italic;">💬 Note client : ${b.note}</div>` : ''}
       </div>
       <span class="br-badge ${b.status==='confirmed'?'confirmed':'pending'}">${b.status==='confirmed'?'✅ Confirmée':'⏳ En attente'}</span>
       <div class="br-actions">
         ${b.status==='pending' ? `<button class="br-btn" onclick="confirmBooking(${b.id})">✅ Confirmer</button>` : ''}
-        <button class="br-btn rappel" onclick="openRappel(${b.id})">📨 Rappel</button>
+        <button class="br-btn rappel" onclick="openRappel(${b.id})"> Rappel</button>
         <button class="br-btn" style="color:var(--rose);border-color:var(--blush);" onclick="deleteBooking(${b.id})">🗑</button>
       </div>`;
     list.appendChild(row);
@@ -1091,7 +1099,7 @@ function openRappel(id) {
   const b=bookings.find(x=>x.id===id);
   if(!b) return;
   const d=new Date(b.date+'T12:00:00').toLocaleDateString('fr-BE',{weekday:'long',day:'numeric',month:'long'});
-  const msg=`Bonjour ${b.prenom} ! 🌸 Je vous rappelle votre rendez-vous chez MaiBraids_Bxl : ${b.service} le ${d} à ${b.heure}. N'oubliez pas d'avoir les cheveux propres, secs et démêlés. À bientôt ! ✨`;
+  const msg=`Bonjour ${b.prenom} ! Je vous rappelle votre rendez-vous chez MaiBraids_Bxl : ${b.service} le ${d} à ${b.heure}. N'oubliez pas d'avoir les cheveux propres, secs et démêlés. À bientôt !`;
   document.getElementById('rappel-name').textContent=b.prenom+' '+b.nom;
   document.getElementById('rappel-msg').value=msg;
   document.getElementById('rappel-wa').href=`https://wa.me/${b.tel.replace(/\s/g,'')}?text=${encodeURIComponent(msg)}`;
