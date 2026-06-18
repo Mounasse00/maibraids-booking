@@ -654,16 +654,25 @@ footer { background:var(--dark); color:rgba(255,255,255,.6); text-align:center; 
           </div>
 
           <div class="fg full">
-            <label>Acompte (30% du prix)</label>
+            <label>Acompte (30% du prix) *</label>
             <div class="acompte-box">
-              <h5><svg class="icon"><use href="#ico-shield"/></svg> Acompte requis via PayPal pour confirmer votre réservation</h5>
-              <p>Après validation de ce formulaire, vous recevrez par e-mail un lien PayPal pour régler votre acompte de 30%. Votre créneau sera définitivement bloqué à réception du paiement. Le solde restant sera réglé en espèces sur place.</p>
+              <h5><svg class="icon"><use href="#ico-shield"/></svg> ÉTAPE 1 : Payez votre acompte via PayPal</h5>
+              <p>Pour bloquer votre créneau, vous devez régler l'acompte de 30% dès maintenant. Cliquez sur le bouton bleu ci-dessous pour ouvrir PayPal :</p>
+              
               <div class="paypal-btn-area">
                 <div id="acompte-amount" style="font-size:13.5px;color:var(--rose);font-weight:600;margin-bottom:12px;"></div>
-                <a id="paypal-link-btn" href="#" target="_blank" class="btn-p" style="display:none;background:#0070ba;font-size:12px;padding:10px 20px;">Payer l'acompte sur PayPal.me 💳</a>
+                <a id="paypal-link-btn" href="#" target="_blank" class="btn-p" style="display:none;background:#0070ba;font-size:12px;padding:10px 20px;" onclick="document.getElementById('f-paypal-clique').value='1'">💳 Payer mon acompte sur PayPal.me</a>
+                <input type="hidden" id="f-paypal-clique" value="0">
+              </div>
+
+              <div style="margin-top: 18px; border-top: 1px dashed var(--border); padding-top: 14px;">
+                <label style="margin-bottom: 4px; display: block;">ÉTAPE 2 : Nom ou e-mail utilisé sur PayPal *</label>
+                <input type="text" id="f-paypal-name" placeholder="Ex: Marie Dupont (ou l'e-mail du compte PayPal)" style="width: 100%;">
+                <span style="font-size:12px; color:var(--light); display:block; margin-top:4px;">Indispensable pour que je puisse lier votre paiement à cette réservation.</span>
               </div>
             </div>
           </div>
+
 
           <div class="fg full">
             <button class="btn-p btn-submit" onclick="submitBooking()">✦ Envoyer ma demande de réservation ✦</button>
